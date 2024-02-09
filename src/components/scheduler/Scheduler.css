@@ -1,0 +1,54 @@
+:root {
+    --meta-header-width: 0.15;
+    --date-header-width: var(--meta-header-width);
+    --time-header-width: var(--meta-header-width);
+    --num-of-table-headers: 4;
+}
+
+.schedule-table {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.hide-date-table tr td:not(.date-cell-header) {
+    display: none;
+}
+
+.date-cell-header {
+    font-size: 20px;
+}
+
+.date-cell-header div {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.schedule-table,
+.schedule-table tbody {
+    border: 3px solid black;
+}
+
+.schedule-table th:nth-child(1),
+.schedule-table tr td:nth-child(1) {
+    width: calc(100% * var(--date-header-width));
+}
+
+.schedule-table th:nth-child(2),
+.schedule-table tr td:nth-child(2) {
+    width: calc(100% * var(--time-header-width));
+}
+
+.schedule-table th:nth-child(3),
+.schedule-table tr td:nth-child(3),
+.schedule-table th:nth-child(4),
+.schedule-table tr td:nth-child(4),
+.schedule-table th:nth-child(5),
+.schedule-table tr td:nth-child(5),
+.schedule-table th:nth-child(6),
+.schedule-table tr td:nth-child(6) {
+    max-width: calc((100% - var(--date-header-width) - var(--time-header-width)) / var(--num-of-table-headers));
+}

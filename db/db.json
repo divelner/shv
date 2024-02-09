@@ -1,0 +1,65 @@
+{
+    "schedule": [{
+        "date": "08/02/2024",
+        "missions": [{
+            "time": "00:00 - 04:00",
+            "mission1": [
+                "Velner",
+                "Kaplan",
+                "Langer"
+            ],
+            "mission2": [
+                "Ramati",
+                "BenBen",
+                "Saban"
+            ]
+        }]
+    }],
+    "groups": [{
+            "id": 1,
+            "name": "Group 1",
+            "participants": [{
+                    "name": "Velner"
+                },
+                {
+                    "name": "Kaplan"
+                },
+                {
+                    "name": "Langer"
+                },
+                {
+                    "name": "Ramati"
+                },
+                {
+                    "name": "BenBen"
+                },
+                {
+                    "name": "Saban"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Group 2",
+            "participants": [{
+                    "name": "Michael"
+                },
+                {
+                    "name": "Idoy"
+                },
+                {
+                    "name": "Idos"
+                },
+                {
+                    "name": "Shiber"
+                },
+                {
+                    "name": "Eitan"
+                },
+                {
+                    "name": "Gidon"
+                }
+            ]
+        }
+    ]
+}

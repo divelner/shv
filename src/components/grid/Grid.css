@@ -1,0 +1,28 @@
+.grid-table {
+    width: 100%;
+}
+
+.grid-table tr {
+    border: 2px solid black;
+}
+
+.grid-table td.list {
+    padding: 0;
+    border-spacing: 0;
+    margin: 0;
+    vertical-align: top;
+}
+
+.grid-table td.list>div>div {
+    border-bottom: 1px solid black;
+    padding: 0;
+    display: flex;
+}
+
+.grid-table td.list>div>div:has(.participant-selection.error) {
+    background-color: red;
+}
+
+.grid-table td.list>div>div:has(.participant-selection.warning) {
+    background-color: yellow;
+}
